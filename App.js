@@ -23,7 +23,6 @@ export default function App() {
         <Text>Quimica</Text>
         <Text>CTS</Text>
         <Text>PLE I</Text>
-        <Text>Calcullo II</Text>
       </View>
 
       <View style={styles.continue}>
