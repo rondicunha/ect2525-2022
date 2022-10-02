@@ -1,91 +1,91 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Image, Text, View } from 'react-native';
-import Constants from 'expo-constants';
-import {FontAwesomes} from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar'
+import React from 'react'
+import { StyleSheet, Image, Text, View } from 'react-native'
+import Constants from 'expo-constants'
+import { FontAwesome5 } from '@expo/vector-icons'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar style="auto"/>
+      <StatusBar style="auto" />
       <View style={styles.header}>
-        <Image style={styles.u_perfil_img} source={require('./images/perfil.jpg')} />
-        <Image style={styles.passarinho_img} source={require('./images/passarinho.png')} />
-        <Image style={styles.mais_img} source={require('./images/mais.png')} />
-
+        <Image
+          style={styles.logoECT}
+          source={require('./images/logoECT.png')}
+        />
+        <Image style={styles.perfil} source={require('./images/perfil.jpg')} />
       </View>
 
-      <View style={styles.body}>
-        <Image style={styles.u_perfil_img} source={require('./images/perfil.jpg')} />
-        <Text style={styles.name_usuario}>Rondinelle Cunha</Text>
+      <View style={styles.aba}>
+        <Text>Pré-Calculo</Text>
+        <Text>Calculo I</Text>
+        <Text>VGA</Text>
+        <Text>Quimica</Text>
+        <Text>CTS</Text>
+        <Text>PLE I</Text>
       </View>
 
-      <View style={styles.footer}>
-        <Image style={styles.img_footer} source={require('./images/home.icon.png')} />
-        <Image style={styles.img_footer} source={require('./images/search.icon.png')} />
-        <Image style={styles.img_footer} source={require('./images/notification.icon.png')} />
-        <Image style={styles.img_footer} source={require('./images/mensage.icon.png')} />
+      <View style={styles.continue}>
+        <Text>Continuar assistindo como Usuario</Text>
+      </View>
 
+      <View style={styles.continuar}>
+        <Image style={styles.foto} source={require('./images/calculo1.jpg')} />
+        <Image style={styles.foto} source={require('./images/calculo1.jpg')} />
+        <Image style={styles.foto} source={require('./images/calculo1.jpg')} />
       </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-  backgroundColor: '#15202B',
-   
-  
+    flex: 1,
+    backgroundColor: '#fff',
+    marginTop: Constants.statusBarHeight
   },
-
   header: {
-    backgroundColor: '#15202B',
     flexDirection: 'row',
-    height: 80,
-    marginTop: Constants.statusBarHeight,
+    height: 60,
+    backgroundColor: '#003153',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: 10,
+    padding: 5
   },
 
-  u_perfil_img: {
+  aba: {
+    flexDirection: 'row',
+    height: 60,
+    backgroundColor: '#f00',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 7
+  },
+
+  logoECT: {
+    height: 40,
+    width: 40
+  },
+
+  continue: {
+    flexDirection: 'row',
+    height: 16
+  },
+  continuar: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    padding: 7,
+    alignItems: 'center'
+  },
+
+  foto: {
+    height: 110,
+    width: 90
+  },
+
+  perfil: {
     height: 40,
     width: 40,
-    borderRadius: 20,
-  },
-
-  passarinho_img: {
-    height: 30,
-    width: 30,
-  },
-
-  mais_img: {
-    height: 20,
-    width: 20,
-  },
-
-  body: {
-    backgroundcolor: '#0f0',
-    flexDirection: 'row',
-    height: 620,
-  },
-
-  footer: {
-    backgroundcolor: '#00f',
-    flexDirection: 'row',
-    height: 500,
-    justifyContent: 'space-between',
-    padding: 10,
-  },
-
-  img_footer: {
-    height: 30,
-    width: 30,
-
-  },
-
-  name_usuario: {
-    color: '#fff',
+    borderRadius: 20
   }
-});
-
+})
