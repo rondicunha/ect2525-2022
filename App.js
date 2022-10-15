@@ -22,7 +22,7 @@ export default function App() {
         <Stack.Screen
           name="VgaScreen"
           component={VgaScreen}
-          options={{ title: 'Aulas de VGA' }}
+          options={{ title: 'Aulas de VGA'}}
         />
         <Stack.Screen
           name="CalculoScreen"

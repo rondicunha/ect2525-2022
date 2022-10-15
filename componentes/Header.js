@@ -13,11 +13,11 @@ export default function Header() {
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
-    height: 60,
-    backgroundColor: '#003153',
-    alignItems: 'center',
+    height: 80,
+    backgroundColor: '#003153', 
+    alignItems: 'flex-end',
     justifyContent: 'space-between',
-    padding: 5
+    padding: 5,
   },
 
   logoECT: {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Image, Text, View } from 'react-native'
+import { StyleSheet, Image, View } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import Button from './Button'
 
@@ -100,7 +100,8 @@ const styles = StyleSheet.create({
 
   foto: {
     height: 150,
-    width: 250
+    width: 250,
+    borderRadius: 20
   },
 
   button: {

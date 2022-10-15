@@ -1,9 +1,9 @@
-import React, { useState, useCallback, useRef } from 'react'
-import { Button, View, Alert, Text, StyleSheet } from 'react-native'
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 import { FlatList } from 'react-native-gesture-handler'
 import YoutubePlayer from 'react-native-youtube-iframe'
 
-export default function VgaScreen({ navigation }) {
+export default function VgaScreen() {
   const videos = [
     {
       id: 1,
@@ -44,7 +44,7 @@ export default function VgaScreen({ navigation }) {
   }
 
   return (
-    <View style={styles.vgascreen}>
+    <View style={styles.screen}>
       <FlatList
         data={videos}
         renderItem={renderItem}
@@ -55,7 +55,7 @@ export default function VgaScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  vgascreen: {
+  screen: {
     backgroundColor: '#003153'
   }
 })

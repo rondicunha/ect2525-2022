@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#0B3553',
     width: 100,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderRadius: 20,
   },
 
   labelButton: {
